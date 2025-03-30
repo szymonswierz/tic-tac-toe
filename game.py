@@ -30,22 +30,23 @@ def place_marker(board, marker, position):
 
 
 def win_check(board, mark):
+    win = "WIN WIN WIN"
     if board[0] == mark and board[1] == mark and board[2] == mark:
-        return "WIN WIN WIN"
+        return win
     if board[3] == mark and board[4] == mark and board[5] == mark:
-        return "WIN WIN WIN"
+        return win
     if board[6] == mark and board[7] == mark and board[8] == mark:
-        return "WIN WIN WIN"
+        return win
     if board[0] == mark and board[3] == mark and board[6] == mark:
-        return "WIN WIN WIN"
+        return win
     if board[1] == mark and board[4] == mark and board[7] == mark:
-        return "WIN WIN WIN"
+        return win
     if board[2] == mark and board[5] == mark and board[8] == mark:
-        return "WIN WIN WIN"
+        return win
     if board[0] == mark and board[4] == mark and board[8] == mark:
-        return "WIN WIN WIN"
+        return win
     if board[2] == mark and board[4] == mark and board[6] == mark:
-        return "WIN WIN WIN"
+        return win
 
 
 def choose_first():  # setup
